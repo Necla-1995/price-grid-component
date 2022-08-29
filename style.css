@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Light-cyan: hsl(179, 58%, 53%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: var(--Light-Gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    width: 50%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+article{
+    padding: 2.5rem 2rem;
+}
+
+/* main join section */
+#join{
+    background-color: #fff;
+}
+#join-title{
+    color: var(--Cyan);
+    margin-bottom: 1.5rem;
+}
+#guarantee-title{
+    color: var(--Bright-Yellow);
+    margin-bottom: 1rem;
+}
+#join-para{
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
+
+/*  Subscription section */
+.container{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+#sub{
+    background-color: var(--Cyan);
+}
+#price{
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+#price-value{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+#per-month{
+    color: var(--Light-Gray);
+}
+#sub-para{
+    margin-bottom: 2rem;
+}
+#signUp{
+    background-color: var(--Bright-Yellow);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+/* Why us section  */
+#whyUs{
+    background-color: var(--Light-cyan);
+}
+#why-para{
+    width: 80%;
+    color: var(--Light-Gray);
+    line-height: 1.5;
+}
+
+/* responsive mobile design  */
+@media only screen and (max-width:600px){
+    main{
+        width:85%;
+        margin-top: 5rem;
+    }
+   .container{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+}
